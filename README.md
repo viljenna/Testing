@@ -1,9 +1,9 @@
 # Testing practice
 
-This is an example app about Hands on React Course-materials and the original project can be found here https://github.com/craigmckeachie/keeptrack-ts 
+This is an example app about Hands on React Course-materials and the original project can be found here https://github.com/craigmckeachie/keeptrack-ts.
 \
 \
-Integration and system-tests with Robot Framework can be found in /testit/system.robot and /testit/integration.robot.
+Integration and system-tests with Robot Framework can be found in /testit/system.robot and /testit/integration.robot files.
 \
 \
 Other tests are made with React testing library:
