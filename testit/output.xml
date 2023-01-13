@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on darwin)" generated="20221128 13:15:24.247" rpa="false" schemaversion="3">
+<suite id="s1" name="System" source="/Users/jennaviljakainen/Documents/Koulu/Ohjelmistotestaus/keeptrack-ts-testing1/testit/system.robot">
+<test id="s1-t1" name="Aakkosjärjestys" line="12">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://localhost:3000/</arg>
+<arg>Safari</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221128 13:15:24.462" level="INFO">Opening browser 'Safari' to base url 'http://localhost:3000/'.</msg>
+<status status="PASS" starttime="20221128 13:15:24.462" endtime="20221128 13:15:25.920"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221128 13:15:25.920" endtime="20221128 13:15:25.951"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.02</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20221128 13:15:25.951" endtime="20221128 13:15:25.951"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[contains(text(),'Projects')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:25.952" level="INFO">Clicking element 'xpath://a[contains(text(),'Projects')]'.</msg>
+<status status="PASS" starttime="20221128 13:15:25.951" endtime="20221128 13:15:26.059"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[contains(text(),'More...')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:26.060" level="INFO">Clicking button 'xpath://button[contains(text(),'More...')]'.</msg>
+<status status="PASS" starttime="20221128 13:15:26.059" endtime="20221128 13:15:26.283"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[contains(text(),'More...')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:26.284" level="INFO">Clicking button 'xpath://button[contains(text(),'More...')]'.</msg>
+<status status="PASS" starttime="20221128 13:15:26.283" endtime="20221128 13:15:26.510"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[contains(text(),'More...')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:26.510" level="INFO">Clicking button 'xpath://button[contains(text(),'More...')]'.</msg>
+<status status="PASS" starttime="20221128 13:15:26.510" endtime="20221128 13:15:26.742"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[contains(text(),'More...')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:26.743" level="INFO">Clicking button 'xpath://button[contains(text(),'More...')]'.</msg>
+<status status="PASS" starttime="20221128 13:15:26.742" endtime="20221128 13:15:27.007"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${eka}</var>
+<arg>css:.cols-sm:nth-child(1) strong</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:27.091" level="INFO">${eka} = Hayes Groups</msg>
+<status status="PASS" starttime="20221128 13:15:27.007" endtime="20221128 13:15:27.091"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${toka}</var>
+<arg>css:.cols-sm:nth-child(40) strong</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:27.155" level="INFO">${toka} = Projekti0</msg>
+<status status="PASS" starttime="20221128 13:15:27.092" endtime="20221128 13:15:27.155"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${kolmas}</var>
+<arg>css:.cols-sm:nth-child(95) strong</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:27.214" level="INFO">${kolmas} = Uusi Nimi5</msg>
+<status status="PASS" starttime="20221128 13:15:27.155" endtime="20221128 13:15:27.214"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${{'${eka}' &lt; '${toka}'}}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20221128 13:15:27.215" endtime="20221128 13:15:27.216"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${{'${toka}' &lt; '${kolmas}'}}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20221128 13:15:27.216" endtime="20221128 13:15:27.217"/>
+</kw>
+<status status="PASS" starttime="20221128 13:15:24.461" endtime="20221128 13:15:27.217"/>
+</test>
+<test id="s1-t2" name="Päivitä lomake toimivilla tiedoilla" line="30">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:.cols-sm:nth-child(1) .bordered</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:27.219" level="INFO">Clicking element 'css:.cols-sm:nth-child(1) .bordered'.</msg>
+<status status="PASS" starttime="20221128 13:15:27.219" endtime="20221128 13:15:27.334"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>name:projectForm</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221128 13:15:27.371" level="INFO">Current page contains element 'name:projectForm'.</msg>
+<status status="PASS" starttime="20221128 13:15:27.334" endtime="20221128 13:15:27.371"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:name</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:27.371" level="INFO">Clicking element 'id:name'.</msg>
+<status status="PASS" starttime="20221128 13:15:27.371" endtime="20221128 13:15:27.503"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:name</arg>
+<arg>Uusi Nimi5</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:27.504" level="INFO">Typing text 'Uusi Nimi5' into text field 'id:name'.</msg>
+<status status="PASS" starttime="20221128 13:15:27.503" endtime="20221128 13:15:27.998"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:description</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:27.999" level="INFO">Clicking element 'id:description'.</msg>
+<status status="PASS" starttime="20221128 13:15:27.999" endtime="20221128 13:15:28.073"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:description</arg>
+<arg>Kuvaus</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:28.074" level="INFO">Typing text 'Kuvaus' into text field 'id:description'.</msg>
+<status status="PASS" starttime="20221128 13:15:28.073" endtime="20221128 13:15:28.337"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:budget</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:28.337" level="INFO">Clicking element 'id:budget'.</msg>
+<status status="PASS" starttime="20221128 13:15:28.337" endtime="20221128 13:15:28.406"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:budget</arg>
+<arg>3000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:28.407" level="INFO">Typing text '3000' into text field 'id:budget'.</msg>
+<status status="PASS" starttime="20221128 13:15:28.407" endtime="20221128 13:15:28.527"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:isActive</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:28.528" level="INFO">Clicking element 'id:isActive'.</msg>
+<status status="PASS" starttime="20221128 13:15:28.527" endtime="20221128 13:15:28.603"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[contains(text(),'Save')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:28.604" level="INFO">Clicking button 'xpath://button[contains(text(),'Save')]'.</msg>
+<status status="PASS" starttime="20221128 13:15:28.604" endtime="20221128 13:15:28.769"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Uusi Nimi5</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221128 13:15:28.831" level="INFO">Current page contains text 'Uusi Nimi5'.</msg>
+<status status="PASS" starttime="20221128 13:15:28.770" endtime="20221128 13:15:28.831"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Kuvaus</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221128 13:15:28.897" level="INFO">Current page contains text 'Kuvaus'.</msg>
+<status status="PASS" starttime="20221128 13:15:28.832" endtime="20221128 13:15:28.897"/>
+</kw>
+<kw name="Page Should Not Contain Element" library="SeleniumLibrary">
+<arg>name:projectForm</arg>
+<doc>Verifies that element ``locator`` is not found on the current page.</doc>
+<msg timestamp="20221128 13:15:28.926" level="INFO">Current page does not contain element 'name:projectForm'.</msg>
+<status status="PASS" starttime="20221128 13:15:28.897" endtime="20221128 13:15:28.926"/>
+</kw>
+<status status="PASS" starttime="20221128 13:15:27.218" endtime="20221128 13:15:28.926"/>
+</test>
+<test id="s1-t3" name="Täytä lomake virheellisillä tiedoilla" line="50">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:.cols-sm:nth-child(2) .bordered</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:28.928" level="INFO">Clicking element 'css:.cols-sm:nth-child(2) .bordered'.</msg>
+<status status="PASS" starttime="20221128 13:15:28.928" endtime="20221128 13:15:29.037"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:name</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:29.038" level="INFO">Clicking element 'id:name'.</msg>
+<status status="PASS" starttime="20221128 13:15:29.037" endtime="20221128 13:15:29.111"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:name</arg>
+<arg>Uu</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:29.112" level="INFO">Typing text 'Uu' into text field 'id:name'.</msg>
+<status status="PASS" starttime="20221128 13:15:29.112" endtime="20221128 13:15:29.383"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>css:.error</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221128 13:15:29.410" level="INFO">Current page contains element 'css:.error'.</msg>
+<status status="PASS" starttime="20221128 13:15:29.383" endtime="20221128 13:15:29.410"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:name</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:29.411" level="INFO">Clicking element 'id:name'.</msg>
+<status status="PASS" starttime="20221128 13:15:29.411" endtime="20221128 13:15:29.475"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:name</arg>
+<arg>Uusi</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:29.476" level="INFO">Typing text 'Uusi' into text field 'id:name'.</msg>
+<status status="PASS" starttime="20221128 13:15:29.476" endtime="20221128 13:15:29.742"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:description</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:29.742" level="INFO">Clicking element 'id:description'.</msg>
+<status status="PASS" starttime="20221128 13:15:29.742" endtime="20221128 13:15:29.817"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>id:description</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20221128 13:15:29.817" endtime="20221128 13:15:29.873"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:budget</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:29.874" level="INFO">Clicking element 'id:budget'.</msg>
+<status status="PASS" starttime="20221128 13:15:29.873" endtime="20221128 13:15:29.942"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Description is required.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221128 13:15:30.978" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221128 13:15:30.979" level="FAIL">Page should have contained text 'Description is required.' but did not.</msg>
+<status status="FAIL" starttime="20221128 13:15:29.943" endtime="20221128 13:15:30.983"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>id:budget</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221128 13:15:30.984" endtime="20221128 13:15:30.984"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Budget must be more than $0.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" starttime="20221128 13:15:30.984" endtime="20221128 13:15:30.984"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[contains(text(),'Save')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221128 13:15:30.984" endtime="20221128 13:15:30.984"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221128 13:15:30.984" endtime="20221128 13:15:31.240"/>
+</kw>
+<status status="FAIL" starttime="20221128 13:15:28.927" endtime="20221128 13:15:31.240">Page should have contained text 'Description is required.' but did not.</status>
+</test>
+<test id="s1-t4" name="Avaa Chromella ja muokkaa" line="70">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<arg>executable_path=/Users/jennaviljakainen/Documents/chromedriver-2</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20221128 13:15:31.241" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20221128 13:15:31.241" endtime="20221128 13:15:33.177"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221128 13:15:35.178" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221128 13:15:33.178" endtime="20221128 13:15:35.179"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>http://localhost:3000</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221128 13:15:35.179" level="INFO">Opening url 'http://localhost:3000'</msg>
+<status status="PASS" starttime="20221128 13:15:35.179" endtime="20221128 13:15:35.588"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221128 13:15:35.588" endtime="20221128 13:15:35.713"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.02</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20221128 13:15:35.714" endtime="20221128 13:15:35.714"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[contains(text(),'Projects')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:35.714" level="INFO">Clicking element 'xpath://a[contains(text(),'Projects')]'.</msg>
+<status status="PASS" starttime="20221128 13:15:35.714" endtime="20221128 13:15:35.811"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:.cols-sm:nth-child(4) .bordered</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:35.811" level="INFO">Clicking element 'css:.cols-sm:nth-child(4) .bordered'.</msg>
+<status status="PASS" starttime="20221128 13:15:35.811" endtime="20221128 13:15:35.928"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>name:projectForm</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221128 13:15:35.959" level="INFO">Current page contains element 'name:projectForm'.</msg>
+<status status="PASS" starttime="20221128 13:15:35.929" endtime="20221128 13:15:35.959"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:name</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:35.959" level="INFO">Clicking element 'id:name'.</msg>
+<status status="PASS" starttime="20221128 13:15:35.959" endtime="20221128 13:15:36.097"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:name</arg>
+<arg>Projekti0</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:36.098" level="INFO">Typing text 'Projekti0' into text field 'id:name'.</msg>
+<status status="PASS" starttime="20221128 13:15:36.097" endtime="20221128 13:15:36.352"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:description</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:36.353" level="INFO">Clicking element 'id:description'.</msg>
+<status status="PASS" starttime="20221128 13:15:36.352" endtime="20221128 13:15:36.450"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:description</arg>
+<arg>Kuvaus12</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:36.451" level="INFO">Typing text 'Kuvaus12' into text field 'id:description'.</msg>
+<status status="PASS" starttime="20221128 13:15:36.451" endtime="20221128 13:15:36.629"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:budget</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:36.629" level="INFO">Clicking element 'id:budget'.</msg>
+<status status="PASS" starttime="20221128 13:15:36.629" endtime="20221128 13:15:36.721"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:budget</arg>
+<arg>90</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:36.722" level="INFO">Typing text '90' into text field 'id:budget'.</msg>
+<status status="PASS" starttime="20221128 13:15:36.721" endtime="20221128 13:15:36.876"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:isActive</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:36.876" level="INFO">Clicking element 'id:isActive'.</msg>
+<status status="PASS" starttime="20221128 13:15:36.876" endtime="20221128 13:15:36.996"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[contains(text(),'Save')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:36.996" level="INFO">Clicking button 'xpath://button[contains(text(),'Save')]'.</msg>
+<status status="PASS" starttime="20221128 13:15:36.996" endtime="20221128 13:15:37.158"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Projekti0</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221128 13:15:37.214" level="INFO">Current page contains text 'Projekti0'.</msg>
+<status status="PASS" starttime="20221128 13:15:37.158" endtime="20221128 13:15:37.214"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Kuvaus12</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221128 13:15:37.275" level="INFO">Current page contains text 'Kuvaus12'.</msg>
+<status status="PASS" starttime="20221128 13:15:37.214" endtime="20221128 13:15:37.275"/>
+</kw>
+<kw name="Page Should Not Contain Element" library="SeleniumLibrary">
+<arg>name:projectForm</arg>
+<doc>Verifies that element ``locator`` is not found on the current page.</doc>
+<msg timestamp="20221128 13:15:37.303" level="INFO">Current page does not contain element 'name:projectForm'.</msg>
+<status status="PASS" starttime="20221128 13:15:37.276" endtime="20221128 13:15:37.303"/>
+</kw>
+<status status="PASS" starttime="20221128 13:15:31.241" endtime="20221128 13:15:37.303"/>
+</test>
+<test id="s1-t5" name="Avaa muokatun kentän tiedot" line="94">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:.cols-sm:nth-child(4) strong</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221128 13:15:37.305" level="INFO">Clicking element 'css:.cols-sm:nth-child(4) strong'.</msg>
+<status status="PASS" starttime="20221128 13:15:37.305" endtime="20221128 13:15:37.425"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Projekti0</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221128 13:15:37.480" level="INFO">Current page contains text 'Projekti0'.</msg>
+<status status="PASS" starttime="20221128 13:15:37.426" endtime="20221128 13:15:37.480"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Kuvaus12</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221128 13:15:37.540" level="INFO">Current page contains text 'Kuvaus12'.</msg>
+<status status="PASS" starttime="20221128 13:15:37.481" endtime="20221128 13:15:37.540"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Budget : 90</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221128 13:15:37.602" level="INFO">Current page contains text 'Budget : 90'.</msg>
+<status status="PASS" starttime="20221128 13:15:37.540" endtime="20221128 13:15:37.602"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>active</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221128 13:15:37.666" level="INFO">Current page contains text 'active'.</msg>
+<status status="PASS" starttime="20221128 13:15:37.603" endtime="20221128 13:15:37.666"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221128 13:15:37.667" endtime="20221128 13:15:37.752"/>
+</kw>
+<status status="PASS" starttime="20221128 13:15:37.304" endtime="20221128 13:15:37.753"/>
+</test>
+<doc>Testaukset järjestelmätesteille.</doc>
+<status status="FAIL" starttime="20221128 13:15:24.251" endtime="20221128 13:15:37.754"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="1" skip="0" id="s1" name="System">System</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
